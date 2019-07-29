@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1865">
+        <Style id="1868">
+            <IconStyle id="1869">
+                <colorMode>normal</colorMode>
+                <scale>3</scale>
+                <heading>0</heading>
+                <Icon id="1870">
+                    <href>http://127.0.0.1:8000/static/pokemons_images/Pikachu.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="1873">
+            <IconStyle id="1874">
+                <colorMode>normal</colorMode>
+                <scale>3</scale>
+                <heading>0</heading>
+                <Icon id="1875">
+                    <href>http://127.0.0.1:8000/static/pokemons_images/Pikachu.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="1878">
+            <IconStyle id="1879">
+                <colorMode>normal</colorMode>
+                <scale>3</scale>
+                <heading>0</heading>
+                <Icon id="1880">
+                    <href>http://127.0.0.1:8000/static/pokemons_images/Raichu.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="1883">
+            <IconStyle id="1884">
+                <colorMode>normal</colorMode>
+                <scale>3</scale>
+                <heading>0</heading>
+                <Icon id="1885">
+                    <href>http://127.0.0.1:8000/static/pokemons_images/Lapras.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="1888">
+            <IconStyle id="1889">
+                <colorMode>normal</colorMode>
+                <scale>3</scale>
+                <heading>0</heading>
+                <Icon id="1890">
+                    <href>http://127.0.0.1:8000/static/pokemons_images/Slowpoke.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Placemark id="1867">
+            <name>Pikachu</name>
+            <styleUrl>#1868</styleUrl>
+            <Point id="1866">
+                <coordinates>35.37693481594708,46.86755761631859,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1872">
+            <name>Pikachu</name>
+            <styleUrl>#1873</styleUrl>
+            <Point id="1871">
+                <coordinates>35.3768584458248,46.86756571041259,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1877">
+            <name>Raichu</name>
+            <styleUrl>#1878</styleUrl>
+            <Point id="1876">
+                <coordinates>35.37588678788098,46.86838515699936,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1882">
+            <name>Lapras</name>
+            <styleUrl>#1883</styleUrl>
+            <Point id="1881">
+                <coordinates>35.378163500152034,46.87069967142685,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1887">
+            <name>Slowpoke</name>
+            <styleUrl>#1888</styleUrl>
+            <Point id="1886">
+                <coordinates>35.38174040592162,46.868470419281046,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

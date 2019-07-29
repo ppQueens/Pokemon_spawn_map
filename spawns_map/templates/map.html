@@ -1,0 +1,68 @@
+{% load static %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>KML Layers</title>
+    <style>
+
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+            height: 100%;
+        }
+
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            height: 100%;
+        }
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key={{ api_key }}">
+    </script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/geocodezip/geoxml3/master/polys/geoxml3.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/geocodezip/geoxml3/master/ProjectedOverlay.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var map;
+            var src = '{{ file_kml }}';
+
+
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: new google.maps.LatLng(46.850111, 35.376947),
+                zoom: 13,
+            });
+
+
+            var myParser = new geoXML3.parser(
+                {
+                    map: map,
+                    singleInfoWindow: true,
+                    zoom: false
+                    {#afterParse: useTheData#}
+                });
+            myParser.parse('{% static 'poke_spawn_test.xml' %}');
+
+        });
+
+        function useTheData(doc) {
+            // Geodata handling goes here, using JSON properties of the doc object
+            for (var i = 0; i < doc[0].markers.length; i++) {
+                // console.log(doc[0].markers[i].title);
+                jQuery('#map_text').append(doc[0].markers[i].title + ', ');
+            }
+        };
+    </script>
+
+</head>
+<body>
+<div id="map"></div>
+<div id="map_text"></div>
+
+
+</body>
+</html>
