@@ -1,5 +1,6 @@
-from Pokemon_spawn_map import settings
 import os
+
+from Pokemon_spawn_map import settings
 
 from simplekml import Kml
 

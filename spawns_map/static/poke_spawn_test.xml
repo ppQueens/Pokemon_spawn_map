@@ -7,7 +7,7 @@
                 <scale>3</scale>
                 <heading>0</heading>
                 <Icon id="1870">
-                    <href>http://127.0.0.1:8000/static/pokemons_images/Pikachu.png</href>
+                    <href>/static/pokemons_images/pikachu.png</href>
                 </Icon>
             </IconStyle>
         </Style>
@@ -17,7 +17,7 @@
                 <scale>3</scale>
                 <heading>0</heading>
                 <Icon id="1875">
-                    <href>http://127.0.0.1:8000/static/pokemons_images/Pikachu.png</href>
+                    <href>/static/pokemons_images/pikachu.png</href>
                 </Icon>
             </IconStyle>
         </Style>
@@ -27,7 +27,7 @@
                 <scale>3</scale>
                 <heading>0</heading>
                 <Icon id="1880">
-                    <href>http://127.0.0.1:8000/static/pokemons_images/Raichu.png</href>
+                    <href>/static/pokemons_images/raichu.png</href>
                 </Icon>
             </IconStyle>
         </Style>
@@ -37,7 +37,7 @@
                 <scale>3</scale>
                 <heading>0</heading>
                 <Icon id="1885">
-                    <href>http://127.0.0.1:8000/static/pokemons_images/Lapras.png</href>
+                    <href>/static/pokemons_images/lapras.png</href>
                 </Icon>
             </IconStyle>
         </Style>
@@ -47,7 +47,7 @@
                 <scale>3</scale>
                 <heading>0</heading>
                 <Icon id="1890">
-                    <href>http://127.0.0.1:8000/static/pokemons_images/Slowpoke.png</href>
+                    <href>/static/pokemons_images/slowpoke.png</href>
                 </Icon>
             </IconStyle>
         </Style>
@@ -63,27 +63,6 @@
             <styleUrl>#1873</styleUrl>
             <Point id="1871">
                 <coordinates>35.3768584458248,46.86756571041259,0.0</coordinates>
-            </Point>
-        </Placemark>
-        <Placemark id="1877">
-            <name>Raichu</name>
-            <styleUrl>#1878</styleUrl>
-            <Point id="1876">
-                <coordinates>35.37588678788098,46.86838515699936,0.0</coordinates>
-            </Point>
-        </Placemark>
-        <Placemark id="1882">
-            <name>Lapras</name>
-            <styleUrl>#1883</styleUrl>
-            <Point id="1881">
-                <coordinates>35.378163500152034,46.87069967142685,0.0</coordinates>
-            </Point>
-        </Placemark>
-        <Placemark id="1887">
-            <name>Slowpoke</name>
-            <styleUrl>#1888</styleUrl>
-            <Point id="1886">
-                <coordinates>35.38174040592162,46.868470419281046,0.0</coordinates>
             </Point>
         </Placemark>
     </Document>
