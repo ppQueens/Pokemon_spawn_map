@@ -3,6 +3,7 @@ aws/
 test_proj/
 migrations/
 ssss/
+__pycache__/
 config.ini
 secret.txt
 commands.txt
