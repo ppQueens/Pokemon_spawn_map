@@ -1,5 +1,9 @@
 .idea/
 aws/
+test_proj/
 migrations/
 config.ini
 secret.txt
+commands.txt
+test_aws_2.txt
+test_upload_to_aws.py
