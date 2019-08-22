@@ -4,6 +4,7 @@ test_proj/
 migrations/
 ssss/
 __pycache__/
+her/
 config.ini
 secret.txt
 commands.txt
