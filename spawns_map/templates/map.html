@@ -19,18 +19,18 @@
         }
     </style>
     <script
-			  src="https://code.jquery.com/jquery-3.4.1.slim.js"
-			  integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
-			  crossorigin="anonymous"></script>
-{#    <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js' %}"></script>#}
+            src="https://code.jquery.com/jquery-3.4.1.slim.js"
+            integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+            crossorigin="anonymous"></script>
+    {#    <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js' %}"></script>#}
 
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-{#    <!-- Optional theme -->#}
-{#    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"#}
-{#          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">#}
+    {#    <!-- Optional theme -->#}
+    {#    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"#}
+    {#          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">#}
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
@@ -55,14 +55,13 @@
                 center: new google.maps.LatLng(49.0384, 31.4513),
                 zoom: 6,
             });
-
             var myParser = new geoXML3.parser(
                 {
                     map: map,
                     singleInfoWindow: true,
                     zoom: false
                 });
-            myParser.parse('/static/{{ file }}');
+            myParser.parse('https://sites.google.com/site/kmlfiletestmy/firstkml/poke_spawn_test_10.xml');
 
         });
 
@@ -71,6 +70,7 @@
 </head>
 <body>
 <div class="container">
+    <a href="https://sites.google.com/site/kmlfiletestmy/firstkml/poke_spawn_test_10.xml">ssss</a>
     <div class="row">
         <div class="col-md-8 col-md-offset-2 text-center">
             <div id="clock"></div>
@@ -82,18 +82,6 @@
 <div id="map_text"></div>
 
 <script type="text/javascript">
-    var migrate = new Date('2019-08-22T00:00:00Z');
-    $('#clock').countdown(migrate, function (event) {
-        var $this = $(this).html(event.strftime(''
-            + '<div class="holder"><div class="item"><span>%w</span> week(s)</div>'
-            + '<div class="item"><span>%d</span> day(s)</div></div>'
-            + '<div class="holder"><div class="item"><span>%H</span> hr</div>'
-            + '<div class="item"><span>%M</span> min</div>'
-            + '<div class="item"><span>%S</span> sec</div></div>'));
-        if (event.elapsed) {
-            location.reload();
-        }
-    });
 </script>
 </body>
 

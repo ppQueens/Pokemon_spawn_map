@@ -1,18 +1,6 @@
 from django.db import models
 from pytz import timezone
 
-class TimeStampedModel(models.Model):
-    created = models.DateTimeField(auto_now_add=True)
-    modified = models.DateTimeField(auto_now=True)
-
-    class Meta:
-        abstract = True
-
-
-class Pokemon(TimeStampedModel):
-    pokemon_name = models.CharField(max_length=100)
-    pokemon_image_path = models.ImageField(upload_to='pokemons')
-
 
 class SpawnsDataManager(models.Manager):
     _filtered = None
@@ -39,6 +27,24 @@ class SpawnsDataManager(models.Manager):
         return data_list
 
 
+class NextMigrationDate(models.Manager):
+    def get_last_datetime(self):
+        return self.get_queryset().last().next_m_date
+
+
+class TimeStampedModel(models.Model):
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        abstract = True
+
+
+class Pokemon(TimeStampedModel):
+    pokemon_name = models.CharField(max_length=100)
+    pokemon_image_path = models.ImageField(upload_to='pokemons')
+
+
 class PokemonSpawn(TimeStampedModel):
     objects = SpawnsDataManager()
 
@@ -55,3 +61,8 @@ class PokemonSpawn(TimeStampedModel):
     country = models.CharField(max_length=300, default='')
     state = models.CharField(max_length=300, default='')
     city = models.CharField(max_length=300, default='')
+
+
+class NestMigrations(TimeStampedModel):
+    objects = NextMigrationDate()
+    next_m_date = models.DateTimeField()

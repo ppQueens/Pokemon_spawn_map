@@ -1,12 +1,12 @@
 amqp==2.5.0
 anyjson==0.3.3
-billiard==3.6.0.0
-celery==4.3.0
+billiard==3.5.0.2
+celery==4.1.1
 dj-database-url==0.5.0
 Django==2.2.3
 django-celery-beat==1.5.0
 django-timezone-field==3.0
-kombu==4.6.3
+kombu==4.3.0
 mysqlclient==1.4.2.post1
 Pillow==6.1.0
 psycopg2==2.8.3
@@ -25,4 +25,6 @@ boto3==1.9.199
 botocore==1.12.199
 requests==2.22.0
 geopy==1.20.0
-
+bs4==0.0.1
+django-cors-headers==3.1.0
+google-cloud-storage==1.19.0

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="142">
+        <Style id="145">
+            <IconStyle id="146">
+                <colorMode>normal</colorMode>
+                <scale>3</scale>
+                <heading>0</heading>
+                <Icon id="147">
+                    <href>/static/pokemons_images/raichu.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="150">
+            <IconStyle id="151">
+                <colorMode>normal</colorMode>
+                <scale>3</scale>
+                <heading>0</heading>
+                <Icon id="152">
+                    <href>/static/pokemons_images/raichu.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="155">
+            <IconStyle id="156">
+                <colorMode>normal</colorMode>
+                <scale>3</scale>
+                <heading>0</heading>
+                <Icon id="157">
+                    <href>/static/pokemons_images/eevee.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="160">
+            <IconStyle id="161">
+                <colorMode>normal</colorMode>
+                <scale>3</scale>
+                <heading>0</heading>
+                <Icon id="162">
+                    <href>/static/pokemons_images/eevee.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="165">
+            <IconStyle id="166">
+                <colorMode>normal</colorMode>
+                <scale>3</scale>
+                <heading>0</heading>
+                <Icon id="167">
+                    <href>/static/pokemons_images/cherrim.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="170">
+            <IconStyle id="171">
+                <colorMode>normal</colorMode>
+                <scale>3</scale>
+                <heading>0</heading>
+                <Icon id="172">
+                    <href>/static/pokemons_images/raichu.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="175">
+            <IconStyle id="176">
+                <colorMode>normal</colorMode>
+                <scale>3</scale>
+                <heading>0</heading>
+                <Icon id="177">
+                    <href>/static/pokemons_images/raichu.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="180">
+            <IconStyle id="181">
+                <colorMode>normal</colorMode>
+                <scale>3</scale>
+                <heading>0</heading>
+                <Icon id="182">
+                    <href>/static/pokemons_images/carvanha.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="185">
+            <IconStyle id="186">
+                <colorMode>normal</colorMode>
+                <scale>3</scale>
+                <heading>0</heading>
+                <Icon id="187">
+                    <href>/static/pokemons_images/charmander.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Placemark id="144">
+            <name>Raichu</name>
+            <description>Added 22/08/2019, 23:09:52 Europe/Kiev
+Confirmed: 0</description>
+            <styleUrl>#145</styleUrl>
+            <Point id="143">
+                <coordinates>35.37688662610264,46.86755203013064,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="149">
+            <name>Raichu</name>
+            <description>Added 22/08/2019, 23:16:05 Europe/Kiev
+Confirmed: 0</description>
+            <styleUrl>#150</styleUrl>
+            <Point id="148">
+                <coordinates>35.37688662610264,46.86755203013064,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="154">
+            <name>Eevee</name>
+            <description>Added 23/08/2019, 18:45:11 Europe/Kiev
+Confirmed: 0</description>
+            <styleUrl>#155</styleUrl>
+            <Point id="153">
+                <coordinates>35.37934905645661,46.857720508497835,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="159">
+            <name>Eevee</name>
+            <description>Added 23/08/2019, 19:58:10 Europe/Kiev
+Confirmed: 0</description>
+            <styleUrl>#160</styleUrl>
+            <Point id="158">
+                <coordinates>35.379233582998445,46.87038305773836,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="164">
+            <name>Cherrim</name>
+            <description>Added 23/08/2019, 20:05:01 Europe/Kiev
+Confirmed: 0</description>
+            <styleUrl>#165</styleUrl>
+            <Point id="163">
+                <coordinates>35.37640987202777,46.869174523854355,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="169">
+            <name>Raichu</name>
+            <description>Added 22/08/2019, 18:29:40 Europe/Kiev
+Confirmed: 3</description>
+            <styleUrl>#170</styleUrl>
+            <Point id="168">
+                <coordinates>35.37688662610264,46.86755203013064,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="174">
+            <name>Raichu</name>
+            <description>Added 23/08/2019, 21:59:50 Europe/Kiev
+Confirmed: 0</description>
+            <styleUrl>#175</styleUrl>
+            <Point id="173">
+                <coordinates>35.376906635682055,46.867571296617285,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="179">
+            <name>Carvanha</name>
+            <description>Added 24/08/2019, 20:51:46 Europe/Kiev
+Confirmed: 0</description>
+            <styleUrl>#180</styleUrl>
+            <Point id="178">
+                <coordinates>35.375139702366084,46.86929842759115,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="184">
+            <name>Charmander</name>
+            <description>Added 25/08/2019, 21:40:21 Europe/Kiev
+Confirmed: 0</description>
+            <styleUrl>#185</styleUrl>
+            <Point id="183">
+                <coordinates>35.38050291211897,46.86246353524972,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>
