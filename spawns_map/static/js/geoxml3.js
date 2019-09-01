@@ -1109,7 +1109,7 @@ geoXML3.log = function (msg) {
     }
 };
 
-// Combine two options objects: a set of default values and a set of override values
+// Combine two options objects: a set of default values and a set of override values 
 geoXML3.combineOptions = function (overrides, defaults) {
     var result = {};
     if (!!overrides) {
@@ -1182,7 +1182,7 @@ geoXML3.fetchXML = function (url, callback) {
         xhrFetcher = geoXML3.fetchers.pop();
     } else {
         if (!!window.XMLHttpRequest) {
-            xhrFetcher.fetcher = new window.XMLHttpRequest(); // Most browsers
+            xhrFetcher.fetcher = new XMLHttpRequest(); // Most browsers
 
         } else if (!!window.ActiveXObject) {
             xhrFetcher.fetcher = new window.ActiveXObject('Microsoft.XMLHTTP'); // Some IE
@@ -1193,11 +1193,14 @@ geoXML3.fetchXML = function (url, callback) {
         geoXML3.log('Unable to create XHR object');
         callback(null);
     } else {
-        xhrFetcher.fetcher.open('GET', url, true);
+        //////////////////////////////
+
+        xhrFetcher.fetcher.open('GET', '/cp?url=' + url, true);
+        xhrFetcher.fetcher.setRequestHeader('HTTP_X_REQUESTED_WITH', 'XMLHttpRequest');
+        xhrFetcher.fetcher.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
 
         if (xhrFetcher.fetcher.overrideMimeType) {
-            xhrFetcher.fetcher.overrideMimeType('text/xml');
-
+            xhrFetcher.fetcher.overrideMimeType('text/plain');
         }
         xhrFetcher.fetcher.onreadystatechange = function () {
             if (xhrFetcher.fetcher.readyState === 4) {
@@ -1209,7 +1212,6 @@ geoXML3.fetchXML = function (url, callback) {
                     callback();
                 } else {
                     // Returned successfully
-                    console.log(xhrFetcher.fetcher.responseText);
                     var xml = geoXML3.xmlParse(xhrFetcher.fetcher.responseText);
                     if (xml.parseError && (xml.parseError.errorCode != 0)) {
                         geoXML3.log("XML parse error " + xml.parseError.errorCode + ", " + xml.parseError.reason + "\nLine:" + xml.parseError.line + ", Position:" + xml.parseError.linepos + ", srcText:" + xml.parseError.srcText);
@@ -1224,8 +1226,11 @@ geoXML3.fetchXML = function (url, callback) {
                 geoXML3.fetchers.push(xhrFetcher);
             }
         };
+        //////////////////////////
+
         xhrFetcher.xhrtimeout = setTimeout(timeoutHandler, geoXML3.xhrTimeout);
-        xhrFetcher.fetcher.send(null);
+        xhrFetcher.fetcher.send();
+
     }
 };
 
